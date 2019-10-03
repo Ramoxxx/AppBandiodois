@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".signup_layout"
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -28,7 +28,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="240dp"
-                android:text="Login"
+                android:text="Sign Up"
                 android:textColor="#FFF"
                 android:textSize="22sp"
         </LinearLayout>
@@ -40,17 +40,18 @@
 
             <ImageView
                 android:layout_width="300dp"
-                android:layout_height="60dp"
+                android:layout_height="140dp"
                 android:layout_marginLeft="27dp"
-                android:layout_marginTop="120dp"
-                android:src="@drawable/bandio"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/circulo"
+                />
 
         </LinearLayout>
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="50dp"
             android:drawableLeft="@drawable/ic_perm_identity"
             android:hint=" Username"
             android:textColorHint="#FFF" />
@@ -59,9 +60,24 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
+            android:drawableLeft="@drawable/ic_email"
+            android:hint=" E-Mail"
+            android:textColorHint="#FFF" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
             android:drawableLeft="@drawable/ic_vpn_key_black_24dp"
-            android:drawableRight="@drawable/ic_add_circle"
             android:hint=" Password"
+            android:textColorHint="#FFF" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:drawableLeft="@drawable/ic_cake"
+            android:hint=" Birthday"
             android:textColorHint="#FFF" />
 
         <Button
@@ -72,15 +88,5 @@
             android:background="@drawable/bordas"
             android:drawableTop="@drawable/ic_exit_to_app_black_24dp"
             android:paddingTop="5dp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:text="Don't have an account? Sign Up!"
-            android:textAlignment="center"
-            android:textColor="#FFF"
-
-
     </LinearLayout>
 </LinearLayout>
